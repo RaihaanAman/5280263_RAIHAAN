@@ -1,1 +1,108 @@
 ============== Git workflow working ======================
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git add .
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Git/Git_Configuration_Test.txt
+        new file:   Git/Git_Workflow.txt
+
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git commit -m "Tracking 2 example git files"
+[main 0b6f031] Tracking 2 example git files
+ 2 files changed, 70 insertions(+)
+ create mode 100644 Git/Git_Configuration_Test.txt
+ create mode 100644 Git/Git_Workflow.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git/Git_Workflow.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git add .
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Git/Git_Workflow.txt
+
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git commit -m "Committed workflow file updates"
+[main 50cd6b1] Committed workflow file updates
+ 1 file changed, 1 insertion(+)
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git log
+commit 50cd6b1a7adae40a3a43ba2c1925ecaa689478fd (HEAD -> main)
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Wed Jul 23 15:33:04 2025 +0530
+
+    Committed workflow file updates
+
+commit 0b6f031199790e64819113caf94eb1c988eecb52
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Wed Jul 23 15:27:23 2025 +0530
+
+    Tracking 2 example git files
+
+commit 46279172f134fd39627e393e463103b1808c015b (origin/main, origin/HEAD)
+Author: RaihaanAman <141116473+RaihaanAman@users.noreply.github.com>
+Date:   Wed Jul 23 11:37:30 2025 +0530
+
+    Initial commit
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git log --oneline
+50cd6b1 (HEAD -> main) Committed workflow file updates
+0b6f031 Tracking 2 example git files
+4627917 (origin/main, origin/HEAD) Initial commit
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
