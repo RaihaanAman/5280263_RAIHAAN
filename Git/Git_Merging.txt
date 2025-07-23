@@ -1,0 +1,197 @@
+========================= Git Merging Commands =======================
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git branch
+  feature1
+  feature2
+* main
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git checkout feature1
+Switched to branch 'feature1'
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git diff main..feature1
+diff --git a/Git/Git_Branching.txt b/Git/Git_Branching.txt
+deleted file mode 100644
+index eb114e3..0000000
+--- a/Git/Git_Branching.txt
++++ /dev/null
+@@ -1,100 +0,0 @@
+-===================================== Git Branching Commands ======================
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git branch
+-* main
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git branch feature1
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git branch
+-  feature1
+-* main
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git log --oneliner
+-fatal: unrecognized argument: --oneliner
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git log --oneline
+-73f4f80 (HEAD -> main, origin/main, origin/HEAD, feature1) Final Delete Example
+-c292580 Deleted Hi & Hello txt files
+-246b13e Delete example2
+-194f5e9 Delete example2
+-99f86e6 Delete example
+-bb2f117 Final Git_workflow file update
+-50cd6b1 Committed workflow file updates
+-0b6f031 Tracking 2 example git files
+-4627917 Initial commit
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git checkout feature1
+-Switched to branch 'feature1'
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+-$ ls -lrt
+-total 5
+--rw-r--r-- 1 razee 197609 17 Jul 23 11:58 README.md
+-drwxr-xr-x 1 razee 197609  0 Jul 23 14:35 SDLC/
+-drwxr-xr-x 1 razee 197609  0 Jul 23 19:40 Git/
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+-$ cd Git
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+-$ ls
+-Git_Configuration_Test.txt  Git_Delete.txt  Git_Track.txt  Git_Workflow.txt  index.
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+-$ cd ..
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+-$ git add .
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+-$ git commit -m "changed in feature1"
+-[feature1 8679afb] changed in feature1
+- 1 file changed, 11 insertions(+)
+- create mode 100644 Git/index.html.txt
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+-$ git log --oneline
+-8679afb (HEAD -> feature1) changed in feature1
+-73f4f80 (origin/main, origin/HEAD, main) Final Delete Example
+-c292580 Deleted Hi & Hello txt files
+-246b13e Delete example2
+-194f5e9 Delete example2
+-99f86e6 Delete example
+-bb2f117 Final Git_workflow file update
+-50cd6b1 Committed workflow file updates
+-0b6f031 Tracking 2 example git files
+-4627917 Initial commit
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+-$ git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git bramch
+-git: 'bramch' is not a git command. See 'git --help'.
+-
+-The most similar command is
+-        branch
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git branch
+-  feature1
+-* main
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+-$ git checkout -b feature2
+-Switched to a new branch 'feature2'
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature2)
+-$ git branch
+-  feature1
+-* feature2
+-  main
+-
+-razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature2)
+diff --git a/Git/index.html.txt b/Git/index.html.txt
+new file mode 100644
+index 0000000..9b636ca
+--- /dev/null
++++ b/Git/index.html.txt
+@@ -0,0 +1,11 @@
++<!DOCTYPE html>
++<html>
++<head>
++    <title>My First HTML Page</title>
++</head>
++<body>
++    <h1>Welcome to My Website</h1>
++    <p>This is a paragraph of text.</p>
++    <a href="https://www.google.com">Visit Google</a>
++</body>
++</html>
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git merge feature1
+hint: Waiting for your editor to close the file... 'C:\Program Files\Sublime Text   3\sublime_text.exe': line 1: C:\Program Files\Sublime Text   3\sublime_text.exe: No such file or directory
+error: there was a problem with the editor ''C:\Program Files\Sublime Text   3\sublime_text.exe''
+Not committing merge; use 'git commit' to complete the merge.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main|MERGING)
+$ git checkout feature1
+Switched to branch 'feature1'
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git status
+On branch feature1
+nothing to commit, working tree clean
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git commit -m "Feature1 commit"
+On branch feature1
+nothing to commit, working tree clean
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git merge feature1
+hint: Waiting for your editor to close the file... 'C:\Program Files\Sublime Text   3\sublime_text.exe': line 1: C:\Program Files\Sublime Text   3\sublime_text.exe: No such file or directory
+error: there was a problem with the editor ''C:\Program Files\Sublime Text   3\sublime_text.exe''
+Not committing merge; use 'git commit' to complete the merge.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main|MERGING)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   Git/index.html.txt
+
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main|MERGING)
+$ git commit -m "Merging Feature1 with main"
+[main 6918389] Merging Feature1 with main
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
