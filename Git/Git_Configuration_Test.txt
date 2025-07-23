@@ -16,10 +16,10 @@ Omit --global to set the identity only in this repository.
 fatal: unable to auto-detect email address (got 'razee@Razeen.(none)')
 
 razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
-$ git config --global user.name "RaihaanAman"
+$ git config --global user.name "Raihaan"
 
 razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
-$ git config --global user.email "raihaan200323@gmail.com"
+$ git config --global user.email "raihaan20@gmail.com"
 
 razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
 $ git commit -m "initial version"
@@ -51,8 +51,8 @@ credential.helper=manager
 credential.https://dev.azure.com.usehttppath=true
 init.defaultbranch=main
 core.editor='C:\Program Files\Sublime Text   3\sublime_text.exe'
-user.name=RaihaanAman
-user.email=raihaan200323@gmail.com
+user.name=Raihaan
+user.email=raihaan20@gmail.com
 color.ui=auto
 core.repositoryformatversion=0
 core.filemode=false
@@ -67,4 +67,4 @@ branch.main.merge=refs/heads/main
 
 razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
 $ git config --global user.name
-RaihaanAman
+Raihaan
