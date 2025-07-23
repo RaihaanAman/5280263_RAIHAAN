@@ -1,0 +1,100 @@
+===================================== Git Branching Commands ========================================
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git branch
+* main
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git branch feature1
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git branch
+  feature1
+* main
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git log --oneliner
+fatal: unrecognized argument: --oneliner
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git log --oneline
+73f4f80 (HEAD -> main, origin/main, origin/HEAD, feature1) Final Delete Example
+c292580 Deleted Hi & Hello txt files
+246b13e Delete example2
+194f5e9 Delete example2
+99f86e6 Delete example
+bb2f117 Final Git_workflow file update
+50cd6b1 Committed workflow file updates
+0b6f031 Tracking 2 example git files
+4627917 Initial commit
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git checkout feature1
+Switched to branch 'feature1'
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ ls -lrt
+total 5
+-rw-r--r-- 1 razee 197609 17 Jul 23 11:58 README.md
+drwxr-xr-x 1 razee 197609  0 Jul 23 14:35 SDLC/
+drwxr-xr-x 1 razee 197609  0 Jul 23 19:40 Git/
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ cd Git
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ ls
+Git_Configuration_Test.txt  Git_Delete.txt  Git_Track.txt  Git_Workflow.txt  index.html.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ cd ..
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git add .
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git commit -m "changed in feature1"
+[feature1 8679afb] changed in feature1
+ 1 file changed, 11 insertions(+)
+ create mode 100644 Git/index.html.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git log --oneline
+8679afb (HEAD -> feature1) changed in feature1
+73f4f80 (origin/main, origin/HEAD, main) Final Delete Example
+c292580 Deleted Hi & Hello txt files
+246b13e Delete example2
+194f5e9 Delete example2
+99f86e6 Delete example
+bb2f117 Final Git_workflow file update
+50cd6b1 Committed workflow file updates
+0b6f031 Tracking 2 example git files
+4627917 Initial commit
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git bramch
+git: 'bramch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git branch
+  feature1
+* main
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git checkout -b feature2
+Switched to a new branch 'feature2'
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature2)
+$ git branch
+  feature1
+* feature2
+  main
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (feature2)
