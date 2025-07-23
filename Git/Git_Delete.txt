@@ -1,0 +1,185 @@
+=================== Git Delete Examples ===========================
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ ls -lrt
+total 16
+-rw-r--r-- 1 razee 197609 3718 Jul 23 15:35 Git_Workflow.txt
+-rw-r--r-- 1 razee 197609 2435 Jul 23 15:47 Git_Configuration_Test.txt
+-rw-r--r-- 1 razee 197609 8166 Jul 23 16:03 Git_Track.txt
+-rw-r--r-- 1 razee 197609    0 Jul 23 16:32 Hello.txt
+-rw-r--r-- 1 razee 197609    0 Jul 23 16:34 Git_Delete.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git ls-files --stage
+100644 d941d609e8bbd0200548547be411b1f0bb8122e0 0       Git_Configuration_Test.txt
+100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0       Git_Delete.txt
+100644 5db55dcef6bfc0ea6e292f0fa0df286a3c5e0699 0       Git_Track.txt
+100644 c25640ca0efc25af1bf30b868554ff396882b8b3 0       Git_Workflow.txt
+100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0       Hello.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git rm Hello.txt
+error: the following file has changes staged in the index:
+    Git/Hello.txt
+(use --cached to keep the file, or -f to force removal)
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ cd ..
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Git/Git_Configuration_Test.txt
+        new file:   Git/Git_Delete.txt
+        new file:   Git/Git_Track.txt
+        new file:   Git/Hello.txt
+
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git commit -m "Delete example"
+[main 99f86e6] Delete example
+ 4 files changed, 214 insertions(+), 5 deletions(-)
+ create mode 100644 Git/Git_Delete.txt
+ create mode 100644 Git/Git_Track.txt
+ create mode 100644 Git/Hello.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git rm Hello.txt
+fatal: pathspec 'Hello.txt' did not match any files
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ cd Git
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git rm Hello.txt
+rm 'Git/Hello.txt'
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git ls-files --stage
+100644 d941d609e8bbd0200548547be411b1f0bb8122e0 0       Git_Configuration_Test.txt
+100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0       Git_Delete.txt
+100644 5db55dcef6bfc0ea6e292f0fa0df286a3c5e0699 0       Git_Track.txt
+100644 c25640ca0efc25af1bf30b868554ff396882b8b3 0       Git_Workflow.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ ls -lrt
+total 16
+-rw-r--r-- 1 razee 197609 3718 Jul 23 15:35 Git_Workflow.txt
+-rw-r--r-- 1 razee 197609 2435 Jul 23 15:47 Git_Configuration_Test.txt
+-rw-r--r-- 1 razee 197609 8166 Jul 23 16:03 Git_Track.txt
+-rw-r--r-- 1 razee 197609    0 Jul 23 16:34 Git_Delete.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git add .
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git commit -m "Delete example2"
+[main 194f5e9] Delete example2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Git/{Hello.txt => Hi.txt.txt} (100%)
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ cd git
+bash: cd: git: No such file or directory
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ cd Git
+bash: cd: Git: No such file or directory
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ cd ..
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN (main)
+$ cd Git
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git rm --cached Hi.txt
+fatal: pathspec 'Hi.txt' did not match any files
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git add .
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git commit -m "Delete example2"
+[main 246b13e] Delete example2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Git/{Hi.txt.txt => Hi.txt} (100%)
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git rm --cached Hi.txt
+rm 'Git/Hi.txt'
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git ls-files --stage
+100644 d941d609e8bbd0200548547be411b1f0bb8122e0 0       Git_Configuration_Test.txt
+100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0       Git_Delete.txt
+100644 5db55dcef6bfc0ea6e292f0fa0df286a3c5e0699 0       Git_Track.txt
+100644 c25640ca0efc25af1bf30b868554ff396882b8b3 0       Git_Workflow.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Hi.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hi.txt
+
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git rm Hi.txt
+fatal: pathspec 'Hi.txt' did not match any files
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ rm Hi.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Hi.txt
+
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git commit -m "Deleted Hi & Hello txt files"
+[main c292580] Deleted Hi & Hello txt files
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Git/Hi.txt
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git checkout HEAD~1 Hi.txt
+Updated 1 path from 8a1fbd9
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Hi.txt
+
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
