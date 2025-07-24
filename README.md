@@ -1,15 +1,20 @@
 # 5280263_RAIHAAN
 
-#Completed a beginner-level course on SDLC offered by Great Learning, covering the fundamental phases of the software development life cycle including:
+#Completed a beginner-level course on SDLC from Great Learning, exploring the core phases of software development:
 
-Requirement Analysis
+*Requirement Analysis
+*System Design
+*Implementation (Coding)
+*Testing
+*Deployment & Maintenance
 
-System Design
+The course provided insights into various SDLC models, including:
 
-Implementation (Coding)
+*Waterfall Model
+*Agile Model
+*V-Model
+*Spiral Model
 
-Testing
+Developed a strong foundation in how different methodologies guide project execution, risk management, and iterative development.
 
-Deployment & Maintenance
-
-Gained a foundational understanding of how software projects are planned, executed, and maintained in real-world environments. Emphasis was placed on both Waterfall and Agile methodologies.
+![imaga alt]()
