@@ -6,8 +6,8 @@ Phases: Requirement Analysis, Design, Development, Testing, Deployment, Maintena
 
 Models: Waterfall, Agile, V-Model, Spiral, Iterative and Incremental
 
-![imaga alt](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/0ab730a8f2f84c9a41cfcff00901e5831bab412a/SDLC/5280263_RAIHAAN_GreatLearning_SDLC.png)
+![SDLC_Certificate](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/0ab730a8f2f84c9a41cfcff00901e5831bab412a/SDLC/5280263_RAIHAAN_GreatLearning_SDLC.png)
 
 # Completed Git Training course from Simplilearn
 
-![image alt](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/15f82a09e5c399c8a5f0768b8d8f6697243584fa/Git/5280263_RAIHAAN_Simplilearn.png)
+![Simplilearn_Certificate](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/15f82a09e5c399c8a5f0768b8d8f6697243584fa/Git/5280263_RAIHAAN_Simplilearn.png)
