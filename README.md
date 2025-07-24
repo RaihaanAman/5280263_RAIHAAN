@@ -10,4 +10,8 @@ Models: Waterfall, Agile, V-Model, Spiral, Iterative and Incremental
 
 # Completed Git Training course from Simplilearn
 
-![Simplilearn_Certificate](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/15f82a09e5c399c8a5f0768b8d8f6697243584fa/Git/5280263_RAIHAAN_Simplilearn.png)
+Completed Git training from Simplilearn covering repository setup, branching, and merging.
+Practiced real-world version control workflows including stash, rebase, and conflict resolution.
+Learned collaborative GitHub workflows with pull requests and best practices for clean commits.
+
+![Simplilearn_Certificate](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/3fa8cdb011b4bb3a8de48dd46771eedbe3f0763d/Git/5280263_Simplilearn_Certificate.png)
