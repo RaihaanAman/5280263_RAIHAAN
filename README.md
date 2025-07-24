@@ -10,4 +10,4 @@ Models: Waterfall, Agile, V-Model, Spiral, Iterative and Incremental
 
 # Completed Git Training course from Simplilearn
 
-![image alt](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/15f82a09e5c399c8a5f0768b8d8f6697243584fa/Git/5280263_RAIHAAN_Simplilearn.pdf)
+![image alt](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/15f82a09e5c399c8a5f0768b8d8f6697243584fa/Git/5280263_RAIHAAN_Simplilearn.png)
