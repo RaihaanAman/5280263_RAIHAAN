@@ -5,10 +5,9 @@ int main(){
 
 void main(){
     int a = 10;
-    int b = 0;
-    //this is from main
 }
 
 void main(){
     //print("Hello");
+    //this is from feature1 branch
 }
