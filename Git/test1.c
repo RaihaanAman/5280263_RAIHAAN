@@ -13,5 +13,5 @@ void main(){
 }
 
 void main(){
-    int c =10;
+    //hi
 }
