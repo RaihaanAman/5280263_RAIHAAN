@@ -8,3 +8,7 @@ void main(){
     int b = 0;
     //this is from main
 }
+
+void main(){
+    //print("Hello");
+}
