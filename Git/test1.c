@@ -1,4 +1,5 @@
 int main(){
+
     //this is from main
     return 0;
 }
@@ -12,6 +13,3 @@ void main(){
     //this is from feature1 branch
 }
 
-void main(){
-    //hi
-}
