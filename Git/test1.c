@@ -11,3 +11,7 @@ void main(){
     //print("Hello");
     //this is from feature1 branch
 }
+
+void main(){
+    int c =10;
+}
