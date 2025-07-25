@@ -1,0 +1,358 @@
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test1.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git add .
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git commit -m "Test1 file update in main"
+[main 3e3e600] Test1 file update in main
+ 1 file changed, 4 deletions(-)
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git checkout feature1
+Switched to branch 'feature1'
+Your branch is up to date with 'origin/feature1'.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git status
+On branch feature1
+Your branch is up to date with 'origin/feature1'.
+
+nothing to commit, working tree clean
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git checkout feature1
+Switched to branch 'feature1'
+Your branch is up to date with 'origin/feature1'.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git add .
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git commit -m "Feature1 test1 file update"
+[feature1 b562f07] Feature1 test1 file update
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git log
+commit b562f07e073fddbb869e4f6849bb5a73e8a071f1 (HEAD -> feature1)
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:48:41 2025 +0530
+
+    Feature1 test1 file update
+
+commit ecd1f93260795e6197313d7511acbc7a33d58423 (origin/main, origin/feature1, origin/HEAD)
+Merge: 89f71b1 e45a5e2
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:06:37 2025 +0530
+
+    commit
+
+commit 89f71b15f7b730f68cbaf33fc7f9178503aac43b
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:03:48 2025 +0530
+
+    resolved
+
+commit 44e930c71df8f46dc741b1c481578f2c1a2c5303
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:02:37 2025 +0530
+
+    commit1
+
+commit e45a5e217a51f72ab7a589085128628b36baf1c4
+Merge: 18bdf26 936b222
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:58:41 2025 +0530
+
+    Resolved merge
+
+commit 18bdf2631ac56be43f80786f9a5b20a4cc973278
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:55:38 2025 +0530
+
+    rebase conflict resolved
+
+commit b6413d614e7279157ddc93e3675865cdf0a90c4f
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:54:00 2025 +0530
+
+    rebase conflict resolved
+
+commit 5a7d3b904bdceb12a950c911c97196537e99cba3
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:51:01 2025 +0530
+
+    modified test1
+
+commit 4a3452391a1ed91c970a02568236ba83bb513906
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:40:00 2025 +0530
+
+    Updated test1 file in feature1
+
+commit e53e5a9d9afdef9ea8867bd5248204a88d340edb
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git reset --soft
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git log
+commit b562f07e073fddbb869e4f6849bb5a73e8a071f1 (HEAD -> feature1)
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:48:41 2025 +0530
+
+    Feature1 test1 file update
+
+commit ecd1f93260795e6197313d7511acbc7a33d58423 (origin/main, origin/feature1, origin/HEAD)
+Merge: 89f71b1 e45a5e2
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:06:37 2025 +0530
+
+    commit
+
+commit 89f71b15f7b730f68cbaf33fc7f9178503aac43b
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:03:48 2025 +0530
+
+    resolved
+
+commit 44e930c71df8f46dc741b1c481578f2c1a2c5303
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:02:37 2025 +0530
+
+    commit1
+
+commit e45a5e217a51f72ab7a589085128628b36baf1c4
+Merge: 18bdf26 936b222
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:58:41 2025 +0530
+
+    Resolved merge
+
+commit 18bdf2631ac56be43f80786f9a5b20a4cc973278
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:55:38 2025 +0530
+
+    rebase conflict resolved
+
+commit b6413d614e7279157ddc93e3675865cdf0a90c4f
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:54:00 2025 +0530
+
+    rebase conflict resolved
+
+commit 5a7d3b904bdceb12a950c911c97196537e99cba3
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:51:01 2025 +0530
+
+    modified test1
+
+commit 4a3452391a1ed91c970a02568236ba83bb513906
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:40:00 2025 +0530
+
+    Updated test1 file in feature1
+
+commit e53e5a9d9afdef9ea8867bd5248204a88d340edb
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ ^C
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git reset --soft b562f07e073fddbb869e4f6849bb5a73e8a071f1
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git log
+commit b562f07e073fddbb869e4f6849bb5a73e8a071f1 (HEAD -> feature1)
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:48:41 2025 +0530
+
+    Feature1 test1 file update
+
+commit ecd1f93260795e6197313d7511acbc7a33d58423 (origin/main, origin/feature1, origin/HEAD)
+Merge: 89f71b1 e45a5e2
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:06:37 2025 +0530
+
+    commit
+
+commit 89f71b15f7b730f68cbaf33fc7f9178503aac43b
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:03:48 2025 +0530
+
+    resolved
+
+commit 44e930c71df8f46dc741b1c481578f2c1a2c5303
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:02:37 2025 +0530
+
+    commit1
+
+commit e45a5e217a51f72ab7a589085128628b36baf1c4
+Merge: 18bdf26 936b222
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:58:41 2025 +0530
+
+    Resolved merge
+
+commit 18bdf2631ac56be43f80786f9a5b20a4cc973278
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:55:38 2025 +0530
+
+    rebase conflict resolved
+
+commit b6413d614e7279157ddc93e3675865cdf0a90c4f
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:54:00 2025 +0530
+
+    rebase conflict resolved
+
+commit 5a7d3b904bdceb12a950c911c97196537e99cba3
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:51:01 2025 +0530
+
+    modified test1
+
+commit 4a3452391a1ed91c970a02568236ba83bb513906
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:40:00 2025 +0530
+
+    Updated test1 file in feature1
+
+commit e53e5a9d9afdef9ea8867bd5248204a88d340edb
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git reset --soft ecd1f93260795e6197313d7511acbc7a33d58423
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git log
+commit ecd1f93260795e6197313d7511acbc7a33d58423 (HEAD -> feature1, origin/main, origin/feature1, origin/HEAD)
+Merge: 89f71b1 e45a5e2
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:06:37 2025 +0530
+
+    commit
+
+commit 89f71b15f7b730f68cbaf33fc7f9178503aac43b
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:03:48 2025 +0530
+
+    resolved
+
+commit 44e930c71df8f46dc741b1c481578f2c1a2c5303
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 13:02:37 2025 +0530
+
+    commit1
+
+commit e45a5e217a51f72ab7a589085128628b36baf1c4
+Merge: 18bdf26 936b222
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:58:41 2025 +0530
+
+    Resolved merge
+
+commit 18bdf2631ac56be43f80786f9a5b20a4cc973278
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:55:38 2025 +0530
+
+    rebase conflict resolved
+
+commit b6413d614e7279157ddc93e3675865cdf0a90c4f
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:54:00 2025 +0530
+
+    rebase conflict resolved
+
+commit 5a7d3b904bdceb12a950c911c97196537e99cba3
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:51:01 2025 +0530
+
+    modified test1
+
+commit 4a3452391a1ed91c970a02568236ba83bb513906
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:40:00 2025 +0530
+
+    Updated test1 file in feature1
+
+commit e53e5a9d9afdef9ea8867bd5248204a88d340edb
+Author: RaihaanAman <raihaan200323@gmail.com>
+Date:   Fri Jul 25 12:44:25 2025 +0530
+
+    Reviewed changes and resolved
+
+commit 936b222890a73f5a4c6c1ca3a1c1d1eddc1ca9e1
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git rebase feature1 main
+error: cannot rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git stash
+Saved working directory and index state WIP on feature1: ecd1f93 commit
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git rebase feature1 main
+Current branch main is up to date.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git checkout feature1
+Switched to branch 'feature1'
+Your branch is up to date with 'origin/feature1'.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (feature1)
+$ git rebase feature1 main
+Current branch main is up to date.
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 397 bytes | 397.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/RaihaanAman/5280263_RAIHAAN.git
+   ecd1f93..3e3e600  main -> main
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+razee@Razeen MINGW64 ~/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Git (main)
