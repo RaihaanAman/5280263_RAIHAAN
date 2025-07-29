@@ -1,0 +1,5 @@
+Welcome to Linux Training
+
+The cat command is the simplest command to use when you want to see the contents of a particular file.
+The only issue is that it simply unloads the entire file to your terminal.
+If you want to navigate around a huge file, should use less command alternatively.

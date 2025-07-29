@@ -15,3 +15,10 @@ Practiced real-world version control workflows including stash, rebase, and conf
 Learned collaborative GitHub workflows with pull requests and best practices for clean commits.
 
 ![Simplilearn_Certificate](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/3fa8cdb011b4bb3a8de48dd46771eedbe3f0763d/Git/5280263_Simplilearn_Certificate.png)
+
+# Basics ofLinux Commands
+
+Learned essential Linux commands for file handling, process management, and system navigation.
+Added terminal history and screenshots as proof of practice and hands-on usage.
+
+![Linux_Commands]()
