@@ -21,6 +21,8 @@ Learned collaborative GitHub workflows with pull requests and best practices for
 Learned essential Linux commands for file handling, process management, and system navigation.
 Added terminal history and screenshots as proof of practice and hands-on usage.
 
-![Linux_Commands_History_SS_1]()
-![Linux_Commands_History_SS_2]()
-![Linux_Commands_History_SS_3]()
+![Linux_Commands_History_SS_1](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/b445703ac353071d0a47e587f56c33b5bc84a4f6/Linux/Linux_SS_History_1.png)
+
+![Linux_Commands_History_SS_2](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/b445703ac353071d0a47e587f56c33b5bc84a4f6/Linux/Linux_SS_History_2.png)
+
+![Linux_Commands_History_SS_3](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/b445703ac353071d0a47e587f56c33b5bc84a4f6/Linux/Linux_SS_History_3.png)
