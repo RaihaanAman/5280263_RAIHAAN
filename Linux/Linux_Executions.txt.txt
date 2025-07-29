@@ -1,0 +1,336 @@
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\razee>wsl
+razeen@Razeen:/mnt/c/Users/razee$ cd Desktop
+razeen@Razeen:/mnt/c/Users/razee/Desktop$ ls
+'AI AGENTS AND AUTOMATION'  'LTTS Stepin'   LTTS_Git_Repository  'MoM Generator'   PLC_Program   desktop.ini   passport
+razeen@Razeen:/mnt/c/Users/razee/Desktop$ cd LTTS_Git_Repository
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository$ ls
+5280263_RAIHAAN
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository$ cd 5280263_RAIHAAN
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN$ ls
+Git  README.md  SDLC
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN$ mkdir Linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN$ cd Linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ ls
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ pwd
+/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ mkdir Folder1
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ touch Linux_Commands.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ ls
+Linux_Commands.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ mkdir linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ ls
+Linux_Commands.txt  linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ mv Linux_Commands.txt linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ ls
+linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cd linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ ls
+Linux_Commands.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ echo "Welcome
+> to \"Linux\"
+> Training
+> "
+Welcome
+to "Linux"
+Training
+
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ uname
+Linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ uname -r
+5.15.167.4-microsoft-standard-WSL2
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ locate Linux_Commands.txt
+Command 'locate' not found, but can be installed with:
+sudo apt install plocate
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ ps
+    PID TTY          TIME CMD
+    293 pts/0    00:00:00 bash
+    441 pts/0    00:00:00 ps
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ cat Linux_Commands.txt
+Welcome to Linux Training
+
+The cat command is the simplest command to use when you want to see the contents of a particular file.
+The only issue is that it simply unloads the entire file to your terminal.
+If you want to navigate around a huge file, should use less command alternatively.
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ rm Linux_Commands.txt Test.txt
+rm: cannot remove 'Test.txt': No such file or directory
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ ls
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux/linux$ cd ..
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ ls
+linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ rm linux
+rm: cannot remove 'linux': Is a directory
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ rmdir linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ ls
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ touch test.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ nano
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ ls
+Linux_Test.txt  test.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ rm test.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cat Linux_Test.txt
+Welcome to Linux Training
+
+The cat command is the simplest command to use when you want to see the contents of a particular file.
+The only issue is that it simply unloads the entire file to your terminal.
+If you want to navigate around a huge file, should use less command alternatively.
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cat -n Linux_Test.txt
+     1  Welcome to Linux Training
+     2
+     3  The cat command is the simplest command to use when you want to see the contents of a particular file.
+     4  The only issue is that it simply unloads the entire file to your terminal.
+     5  If you want to navigate around a huge file, should use less command alternatively.
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ tac Linux_Test.txt
+If you want to navigate around a huge file, should use less command alternatively.
+The only issue is that it simply unloads the entire file to your terminal.
+The cat command is the simplest command to use when you want to see the contents of a particular file.
+
+Welcome to Linux Training
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cat Linux_Test.txt | grep "Linux"
+Welcome to Linux Training
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cat Linux_Test.txt > Test2.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ ls
+Linux_Test.txt  Test2.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cat Test2.txt
+Welcome to Linux Training
+
+The cat command is the simplest command to use when you want to see the contents of a particular file.
+The only issue is that it simply unloads the entire file to your terminal.
+If you want to navigate around a huge file, should use less command alternatively.
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ touch Test3.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ nano Test3.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cat Test2 >> Test3.txt
+cat: Test2: No such file or directory
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cat Test2.txt >> Test3.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cat Test3.txt
+Hello I welcome you to learn Linux
+Welcome to Linux Training
+
+The cat command is the simplest command to use when you want to see the contents of a particular file.
+The only issue is that it simply unloads the entire file to your terminal.
+If you want to navigate around a huge file, should use less command alternatively.
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ whoami
+razeen
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ sort Test2.txt
+
+If you want to navigate around a huge file, should use less command alternatively.
+The cat command is the simplest command to use when you want to see the contents of a particular file.
+The only issue is that it simply unloads the entire file to your terminal.
+Welcome to Linux Training
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ whatis sort
+sort (1)             - sort lines of text files
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ whereis sort
+sort: /usr/bin/sort /usr/share/man/man1/sort.1.gz
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ wc Linux_Test.txt
+  5  52 288 Linux_Test.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ man whoami
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ wc -w Linux_Test.txt
+52 Linux_Test.txt
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ date;uname;whoami
+Tue Jul 29 11:44:35 UTC 2025
+Linux
+razeen
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ date && uname
+Tue Jul 29 11:44:51 UTC 2025
+Linux
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ date "+%D %T"
+07/29/25 11:45:19
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ date "+%y %m %d"
+25 07 29
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ date "+%A %B %d %y %T"
+Tuesday July 29 25 11:46:29
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ date --date "2 years ago"
+Sat Jul 29 11:46:52 UTC 2023
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ bc
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'.
+12/5
+2
+1+2
+3
+quit
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ bc <<< "scale=2; 12/5"
+2.40
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ bc <<< "2>3"
+0
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ seq 1 10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ seq -s " " 1 2 10
+1 3 5 7 9
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ seq 1 3 10
+1
+4
+7
+10
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ rev <<< linux
+xunil
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cal
+     July 2025
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30 31
+
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ cal -3
+     June 2025             July 2025            August 2025
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7         1  2  3  4  5                  1  2
+ 8  9 10 11 12 13 14   6  7  8  9 10 11 12   3  4  5  6  7  8  9
+15 16 17 18 19 20 21  13 14 15 16 17 18 19  10 11 12 13 14 15 16
+22 23 24 25 26 27 28  20 21 22 23 24 25 26  17 18 19 20 21 22 23
+29 30                 27 28 29 30 31        24 25 26 27 28 29 30
+                                            31
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ !cal
+cal -3
+     June 2025             July 2025            August 2025
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7         1  2  3  4  5                  1  2
+ 8  9 10 11 12 13 14   6  7  8  9 10 11 12   3  4  5  6  7  8  9
+15 16 17 18 19 20 21  13 14 15 16 17 18 19  10 11 12 13 14 15 16
+22 23 24 25 26 27 28  20 21 22 23 24 25 26  17 18 19 20 21 22 23
+29 30                 27 28 29 30 31        24 25 26 27 28 29 30
+                                            31
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ !!
+cal -3
+     June 2025             July 2025            August 2025
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7         1  2  3  4  5                  1  2
+ 8  9 10 11 12 13 14   6  7  8  9 10 11 12   3  4  5  6  7  8  9
+15 16 17 18 19 20 21  13 14 15 16 17 18 19  10 11 12 13 14 15 16
+22 23 24 25 26 27 28  20 21 22 23 24 25 26  17 18 19 20 21 22 23
+29 30                 27 28 29 30 31        24 25 26 27 28 29 30
+                                            31
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ !-10
+date --date "2 years ago"
+Sat Jul 29 11:50:34 UTC 2023
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ history 10
+  191  bc <<< "scale=2; 12/5"
+  192  bc <<< "2>3"
+  193  seq 1 10
+  194  seq -s " " 1 2 10
+  195  seq 1 3 10
+  196  rev <<< linux
+  197  cal
+  198  cal -3
+  199  date --date "2 years ago"
+  200  history 10
+
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$ history 100
+  103  whereis test.txt
+  104  nano test.txt
+  105  ls
+  106  cat test.txt
+  107  rm test.txt
+  108  ls
+  109  cd
+  110  ls
+  111  cd -
+  112  ls
+  113  mkdir git/get
+  114  mkdir -p git/get
+  115  ls
+  116  cd git
+  117  ls
+  118  cd ..
+  119  rmdir git
+  120  rm git
+  121  cd git
+  122  rm get
+  123  rmdir get
+  124  ls
+  125  cd ..
+  126  rmdir git
+  127  ls
+  128  cd Desktop
+  129  ls
+  130  cd LTTS_Git_Repository
+  131  ls
+  132  cd 5280263_RAIHAAN
+  133  ls
+  134  mkdir Linux
+  135  cd Linux
+  136  ls
+  137  pwd
+  138  mkdir Folder1
+  139  rmdir Folder1
+  140  touch Linux_Commands.txt
+  141  ls
+  142  mkdir linux
+  143  ls
+  144  mv Linux_Commands.txt linux
+  145  ls
+  146  cd linux
+  147  ls
+  148  echo "Welcome
+to \"Linux\"
+Training
+"
+  149  uname
+  150  uname -r
+  151  locate Linux_Commands.txt
+  152  ps
+  153  cat Linux_Commands.txt
+  154  rm Linux_Commands.txt Test.txt
+  155  ls
+  156  cd ..
+  157  ls
+  158  rm linux
+  159  rmdir linux
+  160  ls
+  161  touch test.txt
+  162  nano
+  163  ls
+  164  rm test.txt
+  165  cat Linux_Test.txt
+  166  cat -n Linux_Test.txt
+  167  tac Linux_Test.txt
+  168  cat Linux_Test.txt | grep "Linux"
+  169  cat Linux_Test.txt > Test2.txt
+  170  ls
+  171  cat Test2.txt
+  172  touch Test3.txt
+  173  nano Test3.txt
+  174  cat Test2 >> Test3.txt
+  175  cat Test2.txt >> Test3.txt
+  176  cat Test3.txt
+  177  whoami
+  178  sort Test2.txt
+  179  whatis sort
+  180  whereis sort
+  181  wc Linux_Test.txt
+  182  man whoami
+  183  wc -w Linux_Test.txt
+  184  date;uname;whoami
+  185  date && uname
+  186  date "+%D %T"
+  187  date "+%y %m %d"
+  188  date "+%A %B %d %y %T"
+  189  date --date "2 years ago"
+  190  bc
+  191  bc <<< "scale=2; 12/5"
+  192  bc <<< "2>3"
+  193  seq 1 10
+  194  seq -s " " 1 2 10
+  195  seq 1 3 10
+  196  rev <<< linux
+  197  cal
+  198  cal -3
+  199  date --date "2 years ago"
+  200  history 10
+  201  history
+  202  history 100
+razeen@Razeen:/mnt/c/Users/razee/Desktop/LTTS_Git_Repository/5280263_RAIHAAN/Linux$
