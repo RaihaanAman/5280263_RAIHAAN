@@ -27,7 +27,7 @@ Added terminal history and screenshots as proof of practice and hands-on usage.
 
 ![Linux_Commands_History_SS_3](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/b445703ac353071d0a47e587f56c33b5bc84a4f6/Linux/Linux_SS_History_3.png)
 
-# File Filtering, pattern matching and File Permissions Screenshot
+# Linux File Filtering, Pattern Matching and File Permissions Screenshots
 
 ![Linux_Commands_History_Filter_Pattern_Files_SS_1](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/c48102bbc69447a4f799a098f2badb326b5e45d8/Linux/Linux_Filter_Pattern_Permission_SS_1.png)
 
