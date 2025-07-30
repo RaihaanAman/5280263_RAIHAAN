@@ -1,0 +1,2 @@
+we are learning filter and pattern matching commands 
+this is day3 of linux training

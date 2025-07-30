@@ -1,0 +1,5 @@
+101 | Pune | Maharashtra | 5200
+100 | Chennai | Tamilnadu | 4800
+103 | Delhi | Delhi | 7000
+104 | Andhra | Tirupati | 8000
+102 | Mumbai | maharashtra | 6000
