@@ -33,4 +33,12 @@ Added terminal history and screenshots as proof of practice and hands-on usage.
 
 ![Linux_Commands_History_Filter_Pattern_Files_SS_2](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/c48102bbc69447a4f799a098f2badb326b5e45d8/Linux/Linux_Filter_Pattern_Permission_SS_2.png)
 
+# Completed Beginner to Intermediate Courses on C From Sololearn.
 
+Completed **Introduction to C** and **C Intermediate** courses on SoloLearn.  
+Gained hands-on experience with C fundamentals, control structures, pointers, file handling, Error Handling and preprocessor directives.  
+Practised through coding exercises and quizzes.
+
+![Sololearn_Introduction_To_C](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/3e8d7878125e3d9c281d5efecc2cfae0d4c7e2e2/C/Sololearn_Introduction_to_C_Certificate.png)
+
+![Sololearn_C_Intermediate](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/3e8d7878125e3d9c281d5efecc2cfae0d4c7e2e2/C/Sololearn_C_Intermediate_Certificate.jpg)
