@@ -39,6 +39,6 @@ Completed **Introduction to C** and **C Intermediate** courses on SoloLearn.
 Gained hands-on experience with C fundamentals, control structures, pointers, file handling, Error Handling and preprocessor directives.  
 Practised through coding exercises and quizzes.
 
-![Sololearn_Introduction_To_C](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/3e8d7878125e3d9c281d5efecc2cfae0d4c7e2e2/C/Sololearn_Introduction_to_C_Certificate.png)
+![Sololearn_Introduction_To_C](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/2a886a7fc749b96cac3d20148cda220154bfe782/C/Sololearn_Introduction_to_C_Certificate.png)
 
-![Sololearn_C_Intermediate](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/3e8d7878125e3d9c281d5efecc2cfae0d4c7e2e2/C/Sololearn_C_Intermediate_Certificate.jpg)
+![Sololearn_C_Intermediate](https://github.com/RaihaanAman/5280263_RAIHAAN/blob/2a886a7fc749b96cac3d20148cda220154bfe782/C/Sololearn_C_Intermediate_Certificate.png)
