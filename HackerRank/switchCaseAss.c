@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 int main() {
-     int day;
-
-    while (1) {
+    int day;
+    while(1) {
         printf("Enter day number (1-7, 0 to quit): ");
         scanf("%d", &day);
 
@@ -37,6 +36,7 @@ int main() {
                 break;
         }
     }
+    
 
     return 0;
 }
